@@ -10,7 +10,7 @@ Código de ejemplo del tutorial [Desarrollando más características TDD con _Ruby 
 * gem 2.5.0
 * bundle 1.10.6
 
-Es recomendable el uso de [rbenv][2] con el plugin [rb-build][3] para la instalación.
+Es recomendable el uso de [_rbenv_][2] con el plugin [_rb-build_][3] para la instalación.
 
 Se asume el uso de MySQL con _back-end_. Se puede utilizar cualquier otro _back-end_ soportado por **_ActiveRecord_** con los cambios necesarios en _config/database.yml_.
 
