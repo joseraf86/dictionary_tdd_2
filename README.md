@@ -1,7 +1,7 @@
 # Apuntes de Computación
-#### Desarrollando características bajo el enfoque TDD en _Ruby on Rails_
+#### Desarrollando más características TDD con _Ruby on Rails_
 
-Código de ejemplo del tutorial [Desarrollando más características bajo el enfoque TDD en _Ruby on Rails_][8]. Continuación del post  [Desarrollando características bajo el enfoque TDD en _Ruby on Rails_][1].
+Código de ejemplo del tutorial [Desarrollando más características TDD con _Ruby on Rails_][8]. Continuación del post  [Desarrollando características bajo el enfoque TDD en _Ruby on Rails_][1].
 
 #### Pre-requisitos
 
