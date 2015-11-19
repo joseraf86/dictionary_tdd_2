@@ -1,7 +1,7 @@
-# Apuntes de Computaci√≥n
-#### Desarrollando caracter√≠sticas bajo el enfoque TDD en _Ruby on Rails_
+# Apuntes de ComputaciÛn
+#### Desarrollando caracterÌsticas bajo el enfoque TDD en _Ruby on Rails_
 
-C√≥digo de ejemplo del tutorial [Desarrollando caracter√≠sticas bajo el enfoque TDD en _Ruby on Rails_][1].
+CÛdigo de ejemplo del tutorial [Desarrollando m·s caracterÌsticas bajo el enfoque TDD en _Ruby on Rails_][8]. ContinuaciÛn del post  [Desarrollando caracterÌsticas bajo el enfoque TDD en _Ruby on Rails_][1].
 
 #### Pre-requisitos
 
@@ -10,54 +10,39 @@ C√≥digo de ejemplo del tutorial [Desarrollando caracter√≠sticas bajo el enfoque 
 * gem 2.5.0
 * bundle 1.10.6
 
-Es recomendable el uso de [rbenv][2] con el plugin [rb-build][3] para la instalaci√≥n.
+Es recomendable el uso de [rbenv][2] con el plugin [rb-build][3] para la instalaciÛn.
 
 Se asume el uso de MySQL con _back-end_. Se puede utilizar cualquier otro _back-end_ soportado por **_ActiveRecord_** con los cambios necesarios en _config/database.yml_.
 
-El correcto funcionamiento del ejemplo no est√° garantizado si se usan distintas versiones de las indicadas.
+El correcto funcionamiento del ejemplo no est· garantizado si se usan distintas versiones de las indicadas.
 
-#### Instalaci√≥n
+#### InstalaciÛn
 
-Editar _config/database.yml_ y _config/secrets.yml_ con los datos del usuario de base de datos.
-
-Ejecutar en el directorio ra√≠z del proyecto:
+Ejecutar en el directorio raÌz del proyecto:
 ```sh
-$ git clone https://github.com/joseraf86/dictionary_tdd.git
+$ git clone https://github.com/joseraf86/dictionary_tdd_2.git
 $ bundle install
 $ bundle exec rake db:setup
 $ bundle exec rake test -v
 ```
-
-Comprobar la aplicaci√≥n en:
+Editar _config/database.yml_ y _config/secrets.yml_ con los datos requeridos, e iniciar el servidor de desarrollo.
+```sh
+$ bundle exec rails s
+```
+Comprobar la aplicaciÛn en:
 
 [http://127.0.0.1:3000/words/learn][3]
 
-Deber√≠a generarse una palabra en ingl√©s aleatoriamente y su respectiva traducci√≥n al espa√±ol.
+Debe generarse una palabra en inglÈs aleatoriamente con su respectiva traducciÛn al espaÒol.
 
-#### Seguir los 15 pasos
+#### Instrucciones
 
-Ver detalles en [Desarrollando caracter√≠sticas bajo el enfoque TDD en Ruby on Rails][1].
-
-1. Crear una nueva aplicaci√≥n _Rails_
-2. Configurar la base de datos
-3. Crear el modelo _Word_ con el correspondiente _test_ unitario
-4. Programar el _test_ unitario de la clase _Word_
-5. Ejecutar la migraci√≥n _db/migrate/xxxxxxxxxxxxxx_create_words.rb_
-6. Crear los fixtures y el _test_ para el m√©todo _Word.random_
-7. Implementar el m√©todo _Word.random_
-8. Generar el controlador Words con la acci√≥n _learn_
-9. Escribir un _test_ para la acci√≥n _learn_
-10. Hacer que el _test_ pase
-11. Reescribir el _test_ en  _test/controllers/words_controller_test.rb_
-12. Codificar  la implementaci√≥n
-13. Verificar que la palabra es mostrada
-14. Implementar la vista de la acci√≥n _learn_
-15. Verificaci√≥n manual
+Descargar cÛdigo fuente, el mismo est· intradocumentado. Seguir la lectura de los _posts_ [Desarrollando caracterÌsticas bajo el enfoque TDD en _Ruby on Rails_][1](1∫ parte) y [Desarrollando m·s caracterÌsticas TDD con _Ruby on Rails_][8](2∫ parte). Inspeccionar los ficheros  _test/models/word_test.rb_ y _test/controllers/words_controller_test.rb_ mientras se avanza en la lectura.
 
 #### Lecturas recomendadas
 
-* [15 TDD steps to create a Rails application][4] **(Fuente original/_Original source_: Andrzej Krzywda)**
-* [A Guide to Testing Rails Applications][5] **(Gu√≠a oficial de _Rails_/_Official Rails guide_)**
+* [... and some more TDD steps with Rails ][4] **(Fuente original/_Original source_: _Thoughts on Software_ - Andrzej Krzywda)**
+* [A Guide to Testing Rails Applications][5] **(GuÌa oficial de _Rails_/_Official Rails guide_)**
 * [Red-Green-Refactor][6] **(_Blog_ personal de James Shore/_James Shore's personal blog_)**
 * [Introduction to Test Driven Development (TDD)][7] **(Agile Data por Scott Ambler/_Agile Data by Scott Ambler_)**
 
@@ -72,3 +57,4 @@ joserafaelguevara@gmail.com
 [5]: <http://guides.rubyonrails.org/testing.html>
 [6]: <http://www.jamesshore.com/Blog/Red-Green-Refactor.html>
 [7]: <http://agiledata.org/essays/tdd.html>
+[8]: <https://joserafaelguevara.wordpress.com/2015/11/17/desarrollando-mas-caracteristicas-tdd-con-ruby-on-rails/>
